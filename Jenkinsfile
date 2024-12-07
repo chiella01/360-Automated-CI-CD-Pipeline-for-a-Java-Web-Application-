@@ -17,7 +17,7 @@ pipeline {
     stages {
         stage('Git checkout') {
             steps {                
-                echo 'Cloning the application code...'
+                echo 'Cloning the application code....'
                 git branch: 'main', url: 'https://github.com/chiella01/360-Automated-CI-CD-Pipeline-for-a-Java-Web-Application-.git'
             }
         }
