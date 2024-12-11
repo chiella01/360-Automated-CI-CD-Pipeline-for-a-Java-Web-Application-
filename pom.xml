@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
+  <modelVersion>3.3.9</modelVersion>
 
   <groupId>com.example.maven-project</groupId>
   <artifactId>maven-project</artifactId>
@@ -56,9 +56,8 @@
 
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
-       <!-- <configuration>
+        <configuration>
           <reportPlugins>
-          -->
             <plugin>
               <artifactId>maven-checkstyle-plugin</artifactId>
             </plugin>
@@ -88,10 +87,10 @@
               <groupId>org.codehaus.mojo</groupId>
               <artifactId>taglist-maven-plugin</artifactId>
             </plugin>
-          <reportPlugins>
-        <configuration>
-      <plugin>
-    <plugins>
+          </reportPlugins>
+        </configuration>
+      </plugin>
+    </plugins>
 
     <pluginManagement>
       <plugins>
@@ -177,7 +176,7 @@
 		<plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.13</version> <!-- use the latest version -->
+        <version>0.8.7</version> <!-- use the latest version -->
         <executions>
           <execution>
             <goals>
